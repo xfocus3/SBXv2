@@ -1,10 +1,12 @@
-import React from "react";
 import Footer from "./Layouts/Footer";
 import Header from "./Layouts/Header";
+import React, { Fragment } from "react";
+import Exercices from "./Exercices";
 
 export default props => (
-  <div>
-    <Footer />
+  <Fragment>
     <Header />
-  </div>
+    <Exercices />
+    <Footer />
+  </Fragment>
 );
