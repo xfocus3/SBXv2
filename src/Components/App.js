@@ -2,18 +2,19 @@ import React, { Component, Fragment } from "react";
 import Footer from "./Layouts/Footer";
 import Header from "./Layouts/Header";
 import Exercices from "./Exercices";
-import { exercices, muscules } from "../store";
+import { muscles, exercises } from "../store.js";
 
 export default class extends Component {
   state = {
-    exercices
+    exercises,
+    exercise: {}
   };
   render() {
     return (
       <Fragment>
         <Header />
         <Exercices />
-        <Footer muscules={muscules} />
+        <Footer muscules={muscles} />
       </Fragment>
     );
   }
